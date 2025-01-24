@@ -1,6 +1,10 @@
-def sumador(n, sumando):
-  sumando += 1
-  n += sumando
-  return n
-b = 9
-sumador(5, b)
+def reemplazo(string):
+  s = ""
+  for i in string:
+    if i.isupper():
+      s = s + "$"
+    else:
+      s = s + i
+
+  return s
+print(reemplazo("Mira Que Bien"))
