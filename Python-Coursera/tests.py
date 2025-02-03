@@ -1,10 +1,6 @@
-def reemplazo(string):
-  s = ""
-  for i in string:
-    if i.isupper():
-      s = s + "$"
-    else:
-      s = s + i
+tablero = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
-  return s
-print(reemplazo("Mira Que Bien"))
+for i in range(3):
+    for j in range(3):
+        print(tablero[j][i], end=" ")
+    print()  # Añadir una nueva línea después de cada fila
